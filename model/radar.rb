@@ -2,7 +2,7 @@ require_relative '../helper'
 
 class Radar
   attr_reader :data, :current_window, :start_position, :end_position, 
-              :windows_total, :window_height, :window_width
+              :windows_total, :window_height, :window_width, :edge_case_level
 
   def initialize invader_object, data_path="sample_one"
     @window_width = get_width invader_object
@@ -32,5 +32,13 @@ class Radar
     window.each_with_index do |row, index|
       window[index] = row[start_position[:column]..end_position[:column]] 
     end
+    adjust_size_for_edge_cases window
+  end
+
+  def adjust_size_for_edge_cases window
+    @edge_case_level = (@window_height - window.size) + (@window_width - window.first.size)
+    (@window_height - window.size).times {window << [nil]} 
+    window.each { |row| (@window_width - row.size).times {row << nil} } 
+    window
   end
 end

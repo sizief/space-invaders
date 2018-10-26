@@ -10,7 +10,7 @@ class TestHelper< Minitest::Test
     "----o--oo----o--ooo--ooo---------o---oo-o----oo---o--o---------o----o------o----------------o--o--o-\n", file.first 
   end
 
-  def test_similarity_percentage_not_equal_size
-    assert_equal similarity_percentage([1],[2,3]),0
+  def test_arraay_similarity_percentage_not_equal_size
+    assert_equal array_similarity_percentage([1],[2,3]),0
   end
 end

@@ -21,4 +21,12 @@ class TestRadar< Minitest::Test
     assert_equal @radar.current_window.first, "---o--oo".chars 
   end
 
+  def test_same_size_for_all_windows
+    @radar.windows_total.times do
+      assert_equal @radar.current_window.size, 8, "#{@radar.inspect}"
+      assert_equal @radar.current_window.first.size, 8, "#{@radar.inspect}"
+      @radar.next_window
+    end
+  end
+
 end

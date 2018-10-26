@@ -18,7 +18,7 @@ def make_image_visible multi_line_array
   image
 end
 
-def similarity_percentage source, target
+def array_similarity_percentage source, target
   return 0 if source.size != target.size
   similarity = 0
   source.each_with_index do |element,index|

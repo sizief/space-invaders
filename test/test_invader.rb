@@ -20,4 +20,5 @@ class TestInvader< Minitest::Test
     assert_equal @invaders[0].data.first.size, 8
     assert_equal @invaders[1].data.first.size, 11
   end
+
 end
