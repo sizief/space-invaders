@@ -3,7 +3,7 @@ class Invader
   attr_accessor :type, :data, :density
 
   def initialize type
-    @type = type.upcase
+    @type = type
     @data = convert_to_array read_file(@type)
     @density = @data.join.tr("-","").size   
   end
