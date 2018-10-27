@@ -1,5 +1,5 @@
 def read_file file
-  File.open("radar_files/"+file, "r") 
+  File.open("./radar_files/"+file, "r") 
 end
 
 def convert_to_array file

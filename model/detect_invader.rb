@@ -49,7 +49,7 @@ class DetectInvader
   end 
 
   def similarity_percentage current_window
-    percentage = @radar.edge_case_level == 0 ? SIMILARITY_PERCENTAGE : SIMILARITY_PERCENTAGE - (@radar.edge_case_level*10) 
+    @radar.edge_case_level == 0 ? SIMILARITY_PERCENTAGE : SIMILARITY_PERCENTAGE - (@radar.edge_case_level*10) 
   end
 
 end
