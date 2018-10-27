@@ -26,13 +26,17 @@ class DetectInvader
           @message += make_image_visible(current_window)+"\n"
         end
       end  
-      @radar.next_window
+      radar_next_window
     end  
   end
 
   private
   def get_position_data
     "start: #{@radar.start_position}, end: #{@radar.end_position}"
+  end
+
+  def radar_next_window
+    @radar.next_window
   end
 
   def current_window
