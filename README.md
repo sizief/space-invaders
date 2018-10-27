@@ -1,7 +1,10 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/cf8340a5a066c77fb3b1/maintainability)](https://codeclimate.com/github/sizief/space-invadors/maintainability)
+  
+
 ## Detect invaders in noisy radar image
   
 ### Problem
-We have [this noisy radar image](radar_files/sample_one), and also two kind of invader's shape: [F11](radar_files/f11) and [F8](radar_files/f8). Find these shapes in noisy image.  
+We have [this noisy radar image](radar_files/sample_one), and also two kinds of invader's shape: [F11](radar_files/f11) and [F8](radar_files/f8). Find these shapes in noisy image.  
   
 ### Solution
 - Create a snapshots (windows) from noisy radar image. These windows are created by shifting one item to right or bottom at the end of line.  
