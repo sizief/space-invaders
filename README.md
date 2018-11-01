@@ -1,5 +1,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/cf8340a5a066c77fb3b1/maintainability)](https://codeclimate.com/github/sizief/space-invadors/maintainability) 
-[![Build Status](https://travis-ci.org/sizief/space-invadors.svg?branch=master)](https://travis-ci.org/sizief/space-invadors)
+[![Build Status](https://travis-ci.org/sizief/space-invaders.svg?branch=master)](https://travis-ci.org/sizief/space-invaders)
   
 
 ## Detect invaders in noisy radar image
